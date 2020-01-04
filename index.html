@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/cssprojeto.css">
+		<title>Francisco Giestas</title>
+	</head>
+  
+	<body>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./bootstrap//js/jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap//js/popper.min.js"></script>
+    <script src="./bootstrap//js/bootstrap.min.js"></script>
+	<script src="./js/jsprojeto.js"></script>
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Francisco Giestas</a>
+
+		<button type="button" class="btn btn-primary" onclick="window.open('http://facebook.com/kiko.giestas/', '_blank')"><i class="fa fa-facebook"></i></button>
+		<button type="button" class="btn btn-primary" onclick="window.open('https://instagram.com/franciscogiestas/', '_blank')"><i class="fa fa-instagram"></i></button>
+		
+		<ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <input type="text" class="form-control" id="textoNav" placeholder="Introduzir texto...">
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary" onclick="executarAlert()">Alert</button>
+            </li>
+			<li class="nav-item">
+                <button type="button" class="btn btn-primary" onclick="mudarCorFundo()">Cor de fundo</button>
+            </li>
+        </ul>
+	</nav>
+	
+	
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">	
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Multiplicação de dois valores</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			
+			<label for="exampleInputEmail1">Primeiro valor</label>
+			<input type="text" class="form-control" id="operando1" aria-describedby="emailHelp" placeholder="Introduzir primeiro valor...">
+			
+			<label for="exampleInputEmail1">Segundo valor</label>
+			<input type="text" class="form-control" id="operando2" placeholder="Introduzir segundo valor...">
+			
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" onclick="calcular()">Multiplicar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<br>
+	
+	<div class="row">
+		<div class="col">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				Multiplicar dois números
+			</button>
+		</div>
+		<div class="col-10">
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				Informação
+			</button>
+			
+			<div class="collapse" id="collapseExample">
+				<div class="card card-body">
+					<div id="biografia">
+					<p class="font-weight-bold">Quem sou eu:</p>
+					<p>Francisco da Luz Giestas, 23º de Setembro de 1998, natural e residente no Arquipélago da Madeira numa zona da área rural, é um estudante da Universidade Fernando Pessoa onde estuda Engenharia Informática.</p>
+					<p>Estudou anteriormente na Universidade da Madeira durante dois anos no mesmo curso até decidir se transferir para este estabelicimento de ensino.</p>
+					<p>Antes da vida universitária, estudou Ciencias e Tecnologias na Escola Secundária Francisco Franco no Funchal.</p>
+					
+					<p class="font-weight-bold">Atividades preferidas:</p>
+					<p>Curiosidade em explorar/pesquisar sobre diferentes áreas como astrologia, fisica, matemática.</p>
+					<p>Porém as suas atividades preferidas e que são praticadas diariamente são:</p>
+					
+					<p class="font-weight-bold">Expectativas para o curso:</p>
+					<p>Espera com este curso formar uma base sólida de conhecimento em matemática e programação para o desenvolvimento do seu raciocínio lógico sobre a area da computação.</p>
+					<p>Enorme curiosidade em desenvolver conhecimentos para o desenvolvimento de algoritmos eficientes, aplicações movéis, websites (JavaScript, PHP, HTML, CSS) e até jogos.</p>
+					</div>
+					
+					<p class="text-muted">
+						<script>
+							nrDePalavras(document.getElementById('biografia'));
+						</script>
+					</p>
+				
+					<hr>
+				
+					<a href="#infoFoto" data-toggle="collapse">
+						<img src="https://i.gyazo.com/e5da079b36e8e3924024fc76d8d45710.png">
+					</a>
+					
+					<div id="infoFoto" class="collapse">
+						<p>30/05/2019 em Paul do Mar, Ilha da Madeira</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+  </body>
+</html>
