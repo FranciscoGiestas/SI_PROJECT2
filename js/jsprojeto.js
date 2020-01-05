@@ -12,6 +12,20 @@ function executarAlert() {
 	alert(str.toUpperCase());
 }
 
+function maiorNumero() {
+	var text = document.getElementById("valores").value;
+	text = text.split(' ').join('');	// Retira os espaços
+	var nrs = text.split(",");	// Separa pelas virgulas
+	var biggest = 0;	// Variavel para o maior
+	for(var i = 0; i < nrs.length; i++) {
+		nrs[i] = parseInt(nrs[i]);	// Transforma num numero
+		if(nrs[i] > biggest) {
+			biggest = nrs[i];	// Se o numero corrente for maior que o "maior numero", substitui
+		}
+	}
+	alert(biggest);
+}
+
 function mudarCorFundo() {
 	if(document.body.style.backgroundColor == secondColor) {
 		document.body.style.backgroundColor = firstColor;
